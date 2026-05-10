@@ -1,0 +1,7 @@
+/*
+ * This file has been created by the Vaadin Theme Editor. Please note that
+ * manual changes to individual CSS properties may be overwritten by the theme editor.
+ */
+html { --aura-background-color-light:rgba(189,189,250,1); }
+
+vaadin-vertical-layout.login-view-vertical-layout-1 { border-width:0px; }

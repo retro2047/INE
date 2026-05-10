@@ -28,9 +28,10 @@ public final class MainLayout extends AppLayout {
         var appLogo = new Avatar("My Application");
         appLogo.addClassName("app-logo");
         appLogo.addThemeVariants(AvatarVariant.AURA_FILLED, AvatarVariant.XSMALL);
+var appName = new Span("Sistema de Evaluación de Alternativas Económicas");
 
-        var appName = new Span("My Application");
         appName.addClassName("app-name");
+appName.getStyle().setWidth("100px").setHeight("20px");
 
         var header = new HorizontalLayout(appLogo, appName);
         header.setAlignItems(FlexComponent.Alignment.CENTER);
@@ -41,6 +42,7 @@ public final class MainLayout extends AppLayout {
     private Component createApplicationDrawer() {
         var scroller = new Scroller(createSideNav());
         scroller.addThemeVariants(ScrollerVariant.OVERFLOW_INDICATORS);
+scroller.getStyle().setWidth("200px");
         return scroller;
     }
 
